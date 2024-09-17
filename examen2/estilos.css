@@ -1,0 +1,133 @@
+/* Estilos generales */
+.container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación de fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para la cabecera */
+.animated-header {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    border-bottom: 5px solid #eee;
+    transition: background-color 0.5s ease;
+}
+
+.animated-header:hover {
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+}
+
+/* Animación del título */
+.animated-title {
+    font-size: 2.5rem;
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animación de la tabla */
+.animated-table {
+    animation: grow 1s ease;
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.table thead {
+    background-color: #343a40;
+    color: white;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Animaciones para las filas de la tabla */
+.animated-row {
+    transition: transform 0.3s ease;
+}
+
+.animated-row:hover {
+    transform: scale(1.02);
+    background-color: #f1f1f1;
+}
+
+/* Botones con animaciones */
+.animated-btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.animated-btn:hover {
+    background-color: #ffc107;
+    transform: scale(1.1);
+}
+
+.animated-btn.btn-danger:hover {
+    background-color: #dc3545;
+}
+
+.animated-add-btn {
+    transition: background-color 0.3s ease, box-shadow 0.3s;
+}
+
+.animated-add-btn:hover {
+    background-color: #28a745;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.animated-footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
